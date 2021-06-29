@@ -6,8 +6,8 @@ const dbConnect = require('./src/lib/db')
 dbConnect()
     .then(() => {
         console.log('DB Connected')
-        server.listen(8080, () => {
-            console.log('server listening in 8080')
+        server.listen(process.env.PORT, () => {
+            console.log(`server listening in port: ${process.env.PORT}`)
         })
     })
     .catch((error) => {

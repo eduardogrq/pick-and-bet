@@ -4,7 +4,7 @@ const {
     DB_USER,
     DB_PASSWORD,
     DB_HOST,
-    DB_NAME
+    DB_NAME,
 } = process.env
 
 const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
